@@ -1,0 +1,31 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.3'
+	id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'org.adaschool'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// Para usar MockedConstruction y evitar conflictos con Boot 3.0.x
+	testImplementation 'org.mockito:mockito-inline:4.11.0'
+	// Útil si usas @ExtendWith(MockitoExtension.class)
+	testImplementation 'org.mockito:mockito-junit-jupiter:4.11.0'
+
+	// (Opcional) Recomendado en Gradle 8+ para ejecutar tests en IDE/CLI
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

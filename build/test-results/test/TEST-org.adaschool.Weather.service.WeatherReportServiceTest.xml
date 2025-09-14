@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.adaschool.Weather.service.WeatherReportServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-09-14T22:42:47" hostname="DESKTOP-H89E5RB" time="1.639">
+  <properties/>
+  <testcase name="Lanza ResponseStatusException cuando 'main' viene nulo" classname="org.adaschool.Weather.service.WeatherReportServiceTest" time="1.584"/>
+  <testcase name="getWeatherReport llama a OpenWeather y mapea temperatura/humedad" classname="org.adaschool.Weather.service.WeatherReportServiceTest" time="0.048"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
